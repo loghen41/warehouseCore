@@ -1,13 +1,13 @@
 (function () {
     angular.module('App')
-        .component('component1', {
+        .component('customInput', {
             bindings: {},
-            templateUrl: 'js/Components/component1/custom-input.html',
-            controller: component1Controller,
+            templateUrl: 'js/Components/custom-input/custom-input.html',
+            controller: customInputController,
             controllerAs: 'vm'
         });
 
-    function component1Controller(authenticationService,databaseService, toastService) {
+    function customInputController(authenticationService,databaseService, toastService) {
         var vm = this;
         $onInit = onInit;
 

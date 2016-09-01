@@ -32,7 +32,12 @@
                 .state('login', {
                     url: '/login',
                     template: '<login></login>'
-                });
+                })
+            .state('input', {
+                url: '/input',
+                template: '<custom-input></custom-input>'
+            });
+
 
 
             $translateProvider.translations('en', {
