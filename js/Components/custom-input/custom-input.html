@@ -1,6 +1,16 @@
 <div class="customInput">
     <header-component header="Custom Input">
     </header-component>
+
+    <form name="inputForm">
+    <md-content class='inputDiv' >
+        <md-input-container ng-repeat="input in vm.inputs" >
+            <label>{{input.name}}</label>
+            <input type="{{input.type}}" name="{{input.input}}" ng-model=input.model>
+        </md-input-container>
+    </md-content>
+    </form>
+
     <footer-component>
     </footer-component>
 </div>

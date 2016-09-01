@@ -11,8 +11,25 @@
         var vm = this;
         $onInit = onInit;
 
+        vm.inputs = [
+            {
+                name: "email",
+                input: "emailInput",
+                model: vm.email,
+                type: "email"
+            },
+            {
+                name: "employeeId",
+                input: "employeeIdInput",
+                model: vm.employeeId,
+                type: "text"
+            }
+        ];
+
         function onInit () {
             vm.user = authenticationService.initialCheck();
+           // vm.inputs = inputService.getInputs();
+
         }
         
     }
