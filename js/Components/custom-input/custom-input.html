@@ -5,10 +5,11 @@
     <form name="inputForm">
     <md-content class='inputDiv' >
         <md-input-container ng-repeat="input in vm.inputs" >
-            <label>{{input.name}}</label>
-            <input type="{{input.type}}" name="{{input.input}}" ng-model=input.model>
+            <label>{{input.label}}</label>
+            <input min="1" type="{{input.type}}" name="{{input.inputName}}" ng-model=input.model>
         </md-input-container>
     </md-content>
+        <md-button class="md-raised md-primary" ng-click="vm.inputFunction()">Submit</md-button>
     </form>
 
     <footer-component>

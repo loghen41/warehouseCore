@@ -7,29 +7,15 @@
             controllerAs: 'vm'
         });
 
-    function customInputController(authenticationService,databaseService, toastService) {
+    function customInputController(authenticationService, databaseService, toastService, inputService) {
         var vm = this;
-        $onInit = onInit;
+        vm.$onInit = onInit;
 
-        vm.inputs = [
-            {
-                name: "email",
-                input: "emailInput",
-                model: vm.email,
-                type: "email"
-            },
-            {
-                name: "employeeId",
-                input: "employeeIdInput",
-                model: vm.employeeId,
-                type: "text"
-            }
-        ];
 
         function onInit () {
             vm.user = authenticationService.initialCheck();
-           // vm.inputs = inputService.getInputs();
-
+            vm.inputs = inputService.getInputs();
+            vm.inputFunction = inputService.getFunction();
         }
         
     }
