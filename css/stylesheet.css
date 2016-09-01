@@ -1,0 +1,97 @@
+/* All CSS styles are arranged Alphabetically */
+
+/* This Resets the CSS styles for margin and padding to be manually defined */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Animations Section */
+@-webkit-keyframes enter {
+    0% {}
+    50% {}
+    75% {}
+    100% {}
+}
+
+@keyframes enter {
+    0% {}
+    50% {}
+    75% {}
+    100% {}
+}
+
+@-webkit-keyframes leave {
+    from {}
+    to {}
+}
+
+@keyframes leave {
+    from {}
+    to {}
+}
+
+/* App Styling Section */
+
+#aboutComponent {
+
+}
+
+.close {
+    width: 2%;
+    margin-left: 98%;
+    top: 1em;
+    cursor: pointer;
+}
+
+#component1Component {
+
+}
+
+#component2Component {
+
+}
+
+.emailForm {
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5vh;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    right: .5em;
+
+}
+
+
+header {
+
+}
+
+#loginComponent {
+
+}
+.loginDiv {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 30vh;
+}
+
+#mainFooter {
+    left: 0;
+}
+
+#settingsComponent {
+
+}
+
+
+
+
